@@ -26,6 +26,7 @@ def reel():
     #open text file with high number of posts
     file = open("high.txt",'r')
     lines = file.read().split("\n")
+    random.shuffle(lines)
     count = 0
     for w in lines:
         tags_list.append(w)
@@ -38,6 +39,8 @@ def reel():
     #open text file with medium number of posts
     file = open("med.txt",'r')
     lines = file.read().split("\n")
+    random.shuffle(lines)
+
     count = 0
     for w in lines:
         tags_list.append(w)
@@ -50,6 +53,8 @@ def reel():
     #open text file with low number of posts
     file = open("low.txt",'r')
     lines = file.read().split("\n")
+    random.shuffle(lines)
+
     count = 0
     for w in lines:
         tags_list.append(w)
